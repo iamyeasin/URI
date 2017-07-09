@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+#define sf scanf
+#define pf printf
+
+using namespace std;
+
+int main()
+{
+    int x,y;
+
+    while(sf("%d:%d",&x,&y) != EOF)
+    {
+        if((x >= 5 && x < 7))pf("Atraso maximo: 0\n");
+        else if(x == 7)
+        {
+            pf("Atraso maximo: %d\n",y);
+        }
+        else if(x == 8)
+        {
+            pf("Atraso maximo: %d\n",y+60);
+        }
+        else if(x == 9)
+        {
+            pf("Atraso maximo: %d\n",y+120);
+        }
+    }
+
+    return 0;
+}
