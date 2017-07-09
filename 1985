@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+#define sf scanf
+#define pf printf
+
+using namespace std;
+
+int main()
+{
+    long n;
+    cin >> n;
+
+    double sum=0.0;
+    for(int i=1; i<=n; i++)
+    {
+        long p,q;
+        cin >> p >> q;
+
+        switch(p)
+        {
+            case 1001: sum += (q*1.50); break;
+            case 1002: sum += (q*2.50); break;
+            case 1003: sum += (q*3.50); break;
+            case 1004: sum += (q*4.50); break;
+            case 1005: sum += (q*5.50); break;
+        }
+    }
+
+    pf("%0.2lf\n",sum);
+
+    return 0;
+}
