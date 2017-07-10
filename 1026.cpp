@@ -55,7 +55,7 @@ int main()
 
     return 0;
 }
-/*This one just ate .41sec but short*/
+/*This one just ate .41sec but short
 
 #include<bits/stdc++.h>
 
@@ -75,3 +75,4 @@ int main()
 	
 	return 0;
 }
+*/
