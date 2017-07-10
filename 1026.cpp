@@ -55,3 +55,23 @@ int main()
 
     return 0;
 }
+/*This one just ate .41sec but short*/
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+	
+	unsigned long long int a,b;
+	
+	while(scanf("%llu %llu",&a,&b) != EOF)
+	{
+		cout << (a^b) << endl;
+		
+	}
+	
+	
+	return 0;
+}
