@@ -6,7 +6,7 @@ int main()
 {
     long kase;
 
-    while(scanf("%d",&kase),kase){
+    while(scanf("%ld",&kase),kase){
         int arr[12],arr2[12],sum1=0,sum2=0;
 
         for(int i=1; i<=kase; i++){ scanf("%d",arr+i); sum1 += arr[i]; }
@@ -20,9 +20,9 @@ int main()
             if(arr2[i] == arr2[i+1] && arr2[i+1] == arr2[i+2]){
                 flag2 = 1;
             }
-            if(flag1 && flag2) break;
-            else if(flag1){sum1 += 30; break; }
-            else if(flag2) {sum2 += 30; break; }
+            if(flag1 && flag2) break; // If both are same nobody gets the extra points
+            else if(flag1){sum1 += 30; break; } // if M gets the first sequence, get extra points and breaks the loop
+            else if(flag2) {sum2 += 30; break; } // if L gets extra points
 
         }
 
