@@ -29,7 +29,7 @@ int main(){
         let[w] = '\0'; int f=1;
         for(int i=1; i<w; i++){
 
-            char ch = let[0] &~(1<<5); // converting to lower case, cool biwise trick
+            char ch = let[0] &~(1<<5); // converting to upper case, cool biwise trick
 
             if((let[i] &~(1<<5)) != ch){
                 puts("N"); f=0;
