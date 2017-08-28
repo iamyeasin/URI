@@ -23,7 +23,6 @@ int main()
                 scanf("%d%d",&x,&y);
                 snk[x] = y ;
         }
-
         bool win= 0;
 
         for(int i=1,x=1; i<=c; i++,x++){
@@ -50,13 +49,10 @@ int main()
                     win =1;
                     player[x]=100;
                 }
-//
             }
-
         }
 
         for(int i=1; i<=a; i++){
-//            cout << "Position of player " << i << " is " << player[i] <<  "." << endl;
             printf("Position of player %d is %d.\n",i,player[i]);
         }
     }
